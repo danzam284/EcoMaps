@@ -1,0 +1,246 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#square {
+    margin-top: 130px;
+}
+.nav-container{
+    position:absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 12px rgba(0, 0, 0, 0.25);
+    width: 1440px;
+    height: 104px;  
+    left: 0px;
+    top: 0px;
+    align-items: center;
+}
+
+.logo-holder{
+    position:absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 31px;
+    width: 367px;
+    height: 80px;
+    left: 532px;
+    top: 14px;
+}
+
+.logo {
+    text-align: left;
+    margin-inline: -56px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul{
+    display: flex;
+}
+nav .logo{
+    position: absolute;
+    font-family: "Impact", fantasy;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 65px;
+    width: 916px;
+    height: 120px;
+    left: calc(160% - 916px/2);
+    top: 0px;
+    color: #000000;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+
+.header-container {
+    background:#FFFFFF url('Group\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: calc(100vh - 200px);
+    
+    display: flex;
+    align-items: center; 
+}
+
+#start {
+    width: 370px;
+    border: 1px solid #848484;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    outline:0;
+    height:25px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left: 14px;
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+}
+
+#start:focus { 
+    outline: none; 
+    border: 1px solid #C7F1FF; 
+    box-shadow: 0px 0px 8px #C7F1FF; 
+    -moz-box-shadow: 0px 0px 8px #C7F1FF; 
+    -webkit-box-shadow: 0px 0px 8px #C7F1FF; 
+} 
+
+#end {
+    width: 370px;
+    border: 1px solid #848484;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    outline:0;
+    height:25px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left: 32px;
+    
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+}
+
+#end:focus { 
+    outline: none; 
+    border: 1px solid #FFE0BB; 
+    box-shadow: 0px 0px 8px #FFE0BB; 
+    -moz-box-shadow: 0px 0px 8px #FFE0BB; 
+    -webkit-box-shadow: 0px 0px 8px #FFE0BB; 
+} 
+
+#btn {
+    margin-left: 290px;
+}
+
+.button_slide {
+    color: #000;
+    border: 2px solid rgb(0,0,0);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D7FFC5;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #99F26F, 6px 16px 50px rgba(1, 1, 1, 0.2);
+}
+  
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+
+
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 4px solid rgb(0, 0, 0);
+    animation: loader 2s infinite ease;
+  }
+  
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(13, 158, 13);
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
+    }
+}
+
+#textbox {
+    border: 4px solid rgb(72, 185, 28);
+    width: 55%;
+    min-height: 50px;
+    margin-top: 15px;
+    margin-left: 320px;
+    display: table;
+    border-radius: 10px;
+    text-align: center
+}
+
+#img {
+    margin-right: 100px;
+}
