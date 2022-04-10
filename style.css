@@ -29,16 +29,13 @@ body {
 
 .logo-holder{
     position:absolute;
-    background: #4eb40a;
+    background: #bec2bd;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 31px;
     width: 367px;
     height: 80px;
-    top: -720px;
-    bottom: 0;
-    left: 0;
-    right: 0;
     margin: auto;
+    margin-inline: 28%;
 }
 
 .logo {
@@ -237,11 +234,11 @@ nav .logo{
     border: 4px solid rgb(72, 185, 28);
     width: 55%;
     min-height: 50px;
-    margin-top: 15px;
-    margin-left: 320px;
     display: table;
     border-radius: 10px;
-    text-align: center
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
 }
 
 #img {
