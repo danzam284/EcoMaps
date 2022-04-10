@@ -139,7 +139,7 @@ async function processResults(options) {
         bestOption = "TRANSIT";
         textbox.innerHTML = "I'd reccomend transit: Transit will take you about " + options["TRANSIT"] + " minutes.\nFun Fact: " + getRandomFunFact();
     } 
-    else if (options["TRANSIT"] < options["DRIVING"] && options["TRANSIT"] != -1) {
+    else if (options["TRANSIT"] < options["DRIVING"] + 20 && options["TRANSIT"] != -1) {
         bestOption = "TRANSIT";
         textbox.innerHTML = "I'd reccomend transit: Transit will take you about " + options["TRANSIT"] + " minutes.\nFun Fact: " + getRandomFunFact();
     }
