@@ -137,15 +137,15 @@ async function processResults(options) {
     }
     else if (options["TRANSIT"] < 30 && options["TRANSIT"] != -1) {
         bestOption = "TRANSIT";
-        textbox.innerHTML = "I'd reccomend transit: Transit will take you about " + options["TRANSIT"] + " minutes.\nFun Fact: " + getRandomFunFact();
+        textbox.innerHTML = "I'd reccomend transit: Transit will take you about " + options["TRANSIT"] + " minutes. By not using a personal vehicle, you are preventing about " + options["TRANSIT"] / 10 + " pounds of harmful CO2 emmisions from entering our atmosphere!\nFun Fact: " + getRandomFunFact();
     } 
     else if (options["TRANSIT"] < options["DRIVING"] + 20 && options["TRANSIT"] != -1) {
         bestOption = "TRANSIT";
-        textbox.innerHTML = "I'd reccomend transit: Transit will take you about " + options["TRANSIT"] + " minutes.\nFun Fact: " + getRandomFunFact();
+        textbox.innerHTML = "I'd reccomend transit: Transit will take you about " + options["TRANSIT"] + " minutes. By not using a personal vehicle, you are preventing about " + options["TRANSIT"] / 10 + " pounds of harmful CO2 emmisions from entering our atmosphere!\nFun Fact: " + getRandomFunFact();
     }
     else {
         bestOption = "DRIVING";
-        textbox.innerHTML = "I'd reccomend driving: Driving will take you about " + options["DRIVING"] + " minutes. Although this is not the most environmentally friendly option, it makes the most sense for getting you to your destination.\nFun Fact: " + getRandomFunFact();
+        textbox.innerHTML = "I'd reccomend driving: Driving will take you about " + options["DRIVING"] + " minutes. Although this is not the most environmentally friendly option, it makes the most sense for getting you to your destination. However, by doing so you will emitt about " + options["DRIVING"] / 10 + " pounds of C02 into our atmosphere.\nFun Fact: " + getRandomFunFact();
     }
     return bestOption;
 }
