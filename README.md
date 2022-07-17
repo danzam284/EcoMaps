@@ -18,3 +18,6 @@ This is a project which we worked on as part of a Hackathon, and we ended up win
 * 🌎 Encourages Users to perform the most environmentally friendly mode of transportation for their trip
 * 🔍 Utilizes Google Maps API for accurate time estimations and route calculations
 * 🏞️ Displays a ton of fun facts regarding the environment to inform our users of their potential damages
+
+## Try it out
+http://greenmap.tech/
